@@ -46,3 +46,17 @@ var deadline = new Date(Date.parse(new Date()) +24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
 
 // Counter Ends
+
+
+
+// navbar  
+var navli=document.querySelector('.navli');
+var navtog=document.querySelector('.navtog');
+console.log(navli);
+console.log(navtog);
+navli.addEventListener('mouseenter',function(e){
+  e.preventDefault();
+ e.currentTarget.classList.toggle('navtogg');
+ // console.log(e.currentTarget);
+ console.log("hello");
+})

@@ -362,18 +362,7 @@ header nav ul li ul li a{
 	color: #a0b3ca;
 	margin-right: 8px;
 }
-.product-bottom button{
-	background-color: #998235;
-	color: white;
-	width:65%;
-	font-size: 16px;
-	padding: 4px;
-	border: 0;
-	margin-right: 3px;
-}
-.product-bottom button:hover{
-	background-color: #F3AC3C;
-}
+
 .product-bottom a{
 	font-size: 15px;
 	color: #f07321;
@@ -381,4 +370,89 @@ header nav ul li ul li a{
 .product-bottom a:hover{
 	color: rgb(51, 51, 223);
 }
+
+.product-bottom .button, .button,.button_apply{
+	background-color: #998235;
+	color: white;
+	font-size: 16px;
+	padding: 4px 13px;
+	margin-right: 3px;
+	border: 0;
+}
+.product-bottom .button:hover,
+.button:hover{
+	background-color: #F3AC3C;
+	color: white;
+}
 /*end product section*/
+
+
+/*********************/
+/*Cart Page*/
+.cart{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 80%;
+	margin: 3% 10%;
+}
+
+.select_item{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 3% 0;
+	background-color: azure;
+}
+.items{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: auto auto auto auto auto;
+	grid-gap: 0 50px;
+	border-bottom: 1px solid #a0b3ca;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.items img{
+	height: 70px;
+	width: 70px;
+}
+
+.love_delete,.fa-trash-alt{
+	margin-top: 5px;
+	color: #a0b3ca;
+}
+
+.total{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+.total .prize{
+	padding: 0;
+}
+.fa-heart{
+	margin-right: 20px;
+}
+.amount{
+	margin: 0 10px;
+}
+.items .light-font{
+	font-size: 14px;
+}
+.button{
+	padding: 4px 43px;
+}
+.button_apply{
+	background-color: skyblue;
+	padding: 9px 6px;
+}
+.button_apply:hover{
+	background-color: blue;
+}
+.text_input{
+	padding: 8px 5px;
+}

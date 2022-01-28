@@ -669,7 +669,10 @@ nav > ul > li > a:hover ul > li:hover a {
 	top:50%;
 	color:#998235;
 }
-.main .product_list {
+
+/*------------------------------------------Start product section-------------------------------*/
+.main .product_list{
+
 	display: grid;
 	justify-content: center;
 	align-content: center;

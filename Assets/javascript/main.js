@@ -156,7 +156,7 @@ function nextSlide(){
 let heading = document.querySelector('.caption-heading');
 
 
-// https://jonsuh.com/blog/detect-the-end-of-css-animations-and-transitions-with-javascript/
+// https://jonsuh.com/blog/detect-the-end-of-css-animations-and-transitions--withjavascript/
 function whichTransitionEvent(){
   var t,
       el = document.createElement("fakeelement");
@@ -182,10 +182,33 @@ function customFunction(event) {
   caption.removeEventListener(transitionEvent, customFunction);
   console.log('animation ended');
 
-  // Do something when the transition ends
 }
 
 
 
 
 // ___________________SLIDER END_______________________________
+
+
+// __________________________Start sign up and Signed in _______________________________
+const signUpButton = document.getElementById('btnsignup');
+const signInButton = document.getElementById('btnsignin');
+const socailheader = document.getElementById('socailheader');
+
+
+
+ signUpButton.addEventListener('click', () => {
+	socailheader.innerText="Create  Your account";
+}); 
+
+
+  signInButton.addEventListener('click', () => {
+    socailheader.innerText="Login ";
+});
+
+
+
+
+
+
+// ____________________________End sign in and Signed up_______________________________

@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap'); */
+:root{
+	--btbg: linear-gradient(	90deg,	rgba(19, 25, 33, 1) 0%,	rgba(153,130, 53, 1) 100%);
+	--bg:#998235;
+}
 html,
 body {
 	margin: 0;
@@ -23,10 +26,11 @@ body {
 .container {
 	padding: 2px;
 }
-.content {
+/* .content {
+	
 }
 ul {
-}
+} */
 li {
 	list-style: none;
 }
@@ -41,6 +45,8 @@ header {
 	/*display: flex;*/
 	/*flex-direction: column;*/
 	/*justify-content: center;*/
+	/* position:fixed; */
+	z-index: 100000000;
 }
 .headtop {
 	display: flex;
@@ -240,6 +246,7 @@ nav {
 	background: #232f3e;
 	height: 40px;
 	margin: 0;
+
 }
 /*nav {
   /*position: absolute;*/
@@ -990,7 +997,7 @@ footer .social-footer-icons ul li a i{
    color:white;
    font-size: 28px;
    border-radius: 50%;
-   transition:background  0.2s ;
+   transition:   0.2s ease-in ;
 
 }
 
@@ -1027,128 +1034,185 @@ footer .footer-copyright {
 	margin-bottom: 30px;
 }
 
-@media screen and (width<1550px) and (width>920px) {
-	footer .social-footer-icons ul {
-		/* display: flex; */
-		margin: 10px 40vw;
-	}
+/* ____________________________________________Start sign in and signup desing._________________________________________ */
+.logcontent{
+	background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* flex-direction: column; */
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 10px 10px;
+	/* margin: 20px 0 50px;	 */
+	/* background-color: red;; */
+}
+.signup-connect{
+	width: 350px;
+	height: 500px;
+	/* background: red; */
+	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+	/* background:var(--bg); */
+	border-radius: 10px;
+	/* box-shadow: 5px 20px 50px #000; */
+	padding:10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
-	footer .social-footer-icons ul li:nth-child(1) {
-		margin: 0px 0px 0px -10%;
+}
+.signup-connect .btn {
+	display: block;
+	/* background: hsl(86, 76%, 71%); */
+	background: var(--btbg);
+	/* color: hsl(0, 0, 100); */
+	color:white;
+	text-decoration: none;
+	margin: 20px 0;
+	padding: 15px 15px;
+	border-radius: 5px;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+}
+.signup-connect .btn::after {
+	  content: '';
+	  position: absolute;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  transition: all .2s ease-in-out;
+	  box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
+	  border-radius: 5px;
 	}
-	footer .social-footer-icons ul li:nth-child(3) {
-		padding: 0px 6% 0px 3%;
+	
+	.signup-connect .btn:hover::after {
+	  background: hsla(0, 0, 0, 0.1);
+	  box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
 	}
-
-	footer .social-footer-icons ul li:nth-child(2) {
-		padding: 0px 3% 0px 6%;
+	
+  
+	.signup-connect  .btn-social {
+	padding-left: 64px;
+	position: relative;
+	z-index: 1;
+  }
+  .signup-connect  .btn-social 	.fa {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: 1;
+	  width: 50px;
+	  height: 100%;
+	  text-align: center;
+	  background: hsla(0, 0, 0, 0.1);
+	  line-height: 3.2;
+	  border-radius: 5px 0 0 5px;
 	}
+	
+  
+	.signup-connect  .btn-social  .btn-facebook {
+	background-color: hsl(221, 44%, 41%);
+  }
+  .signup-connect  .btn-social   .btn-twitter {
+	background-color: hsl(206, 82%, 63%);
+  }
+  .signup-connect  .btn-social   .btn-google {
+	background-color: hsl(7, 71%, 55%); 
+  }
+  .signup-connect  .btn-social   .btn-linkedin {
+	background-color: hsl(196, 100%, 43%);
+  }
+.logcontent .main{
+	width: 350px;
+	height: 500px;
+	/* background: red; */
+	overflow: hidden;
+	/* background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover; */
+	background:var(--bg);
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+#chk{
+	display: none;
+}
+.logcontent .signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+.logcontent label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+.logcontent input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.logcontent button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	/* background: #573b8a; */
+	background:var(--btbg);
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+.logcontent button:hover{
+	background: #6d44b8;
+}
+.logcontent .login{
+	height: 460px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.logcontent .login label{
+	color: #573b8a;
+	transform: scale(.6);
 }
 
-@media screen and (width<1450px) and (width>920px) {
-	.bottom {
-		display: inline;
-	}
-
-	.location {
-		margin: 0px auto;
-		box-sizing: border-box;
-		overflow: hidden;
-		width: 25%;
-		height: 25%;
-	}
-
-	/* .social-footer-icons ul {
-    display: flex;
-    margin: 10px 32%;
-  } */
-	@media screen and (width<1200px) {
-		.bottommenu {
-			/* display: inline flex; */
-			margin-left: 24%;
-			padding: 0%;
-		}
-		.try {
-			padding: 0%;
-		}
-		.try h3 {
-			font-size: 1rem;
-			/* margin-bottom: 16px; */
-		}
-
-		.try h2 {
-			font-size: 0.6rem;
-		}
-
-		.tryLast h3 {
-			font-size: 1rem;
-		}
-
-		.tryLast h2 {
-			font-size: 0.6rem;
-		}
-		@media screen and (width<1150px) {
-			.try {
-				margin-right: 4em;
-			}
-		}
-		@media screen and (width<1100px) {
-			.try {
-				margin-right: 3.7em;
-			}
-		}
-	}
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
 }
 
-@media screen and (width<=1365px) and (width>921px) {
-	.social-footer-icons ul li:nth-child(1) {
-		margin: 0px 0px 0px -1.4em;
-	}
-}
 
-@media screen and (width<=921px) and (width>540px) {
-	.Subscribe {
-		/* display: flex; */
-		margin: 3% 32%;
-		width: 103px;
-		height: 40px;
-	}
-	.bottommenu {
-		display: inline;
-		margin-right: 0px;
-		/* padding: 0%; */
-		text-align: center;
-	}
-	.try {
-		margin-right: 0px;
-	}
 
-	.location {
-		margin: 0px auto;
-		box-sizing: border-box;
-		overflow: hidden;
-		width: 250px;
-		height: 256px;
-	}
-	.bottom {
-		display: inline;
-		/* margin-left: 24%; */
-		/* padding: 0%; */
-		text-align: center;
-	}
 
-	.social-footer-icons {
-		margin: 0px auto;
-	}
-
-	.social-footer-icons ul li:nth-child(3) {
-		margin: 0px 6% 0px 3%;
-	}
-
-	.social-footer-icons ul li:nth-child(2) {
-		margin: 0px 3% 0px 6%;
-	}
-	.footer-down {
-		padding: 0px 5%;
-	}
-}
+ /* ______________________________________________End sigin and sigup design ______________________________________________ */

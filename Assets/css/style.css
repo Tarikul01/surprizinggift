@@ -721,7 +721,7 @@ nav > ul > li > a:hover ul > li:hover a {
 
 .main .product-bottom .button,
 .main .button,
-.main .button_apply {
+.main  .button_apply {
 	background-color: #998235;
 	color: white;
 	font-size: 16px;
@@ -729,12 +729,48 @@ nav > ul > li > a:hover ul > li:hover a {
 	margin-right: 3px;
 	border: 0;
 }
-.product-bottom .button:hover,
-.button:hover {
+ .main  .product-bottom  .button:hover,
+.main .button:hover {
 	background-color: #f3ac3c;
 	color: white;
 }
 /*end product section*/
+/* -------------------------------------------product Category start ------------------------- */
+.product-category{
+
+}
+.product-category .category-list{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-gap: 20px 20px;
+	margin: 20px 0;	
+}
+.product-category  .category-item {
+	background-color: azure;
+	height: 280px;
+}
+
+.product-category .category-item:hover {
+	box-shadow: 1px 1px 3px black;
+}
+
+.product-category .category-item img {
+	height: 200px;
+	width: 200px;
+}
+.product-category .category-item h4 {
+	text-align: center;
+	padding:5px;
+	font-size: 20px;
+}
+.product-category .category-item .product-bottom a{
+	align-items: center;
+	margin:2px;
+}
+
+/* -----------------------------------product Category End __________________ */
 
 /*********************/
 /*Cart Page*/

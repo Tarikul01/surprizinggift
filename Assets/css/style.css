@@ -671,7 +671,7 @@ nav > ul > li > a:hover ul > li:hover a {
 }
 
 /*------------------------------------------Start product section-------------------------------*/
-.main .product_list{
+.main > .product_list{
 
 	display: grid;
 	justify-content: center;
@@ -680,48 +680,52 @@ nav > ul > li > a:hover ul > li:hover a {
 	grid-gap: 20px 20px;
 	margin: 20px 0;
 }
-.main .product_item {
+.main > .product_list > .product_item {
 	background-color: azure;
 	height: 320px;
 }
 
-.main .product_item:hover {
+.main > .product_list > .product_item:hover {
 	box-shadow: 1px 1px 3px black;
 }
 
-.main .product_item img {
+.main > .product_list > .product_item img {
 	height: 200px;
 	width: 200px;
 }
 
-.main .product-bottom {
+.main > .product_list > .product_item > .product-bottom {
 	padding: 9px;
 }
-.main .discount {
+.main > .product_list > .product_item > .product-bottom  .discount {
 	font-size: 14px;
 	padding: 7px 0;
 }
-.main .prize {
+.main > .product_list > .product_item > .product-bottom  .prize,
+.main .total > .prize,
+.container > .cart .items  .prize {
 	color: #ff6b09;
 	font-size: 18px;
 	padding: 7px 0;
 }
-.main .light-font {
+.main > .product_list > .product_item > .product-bottom  .light-font,
+.container > .cart .items .light-font,
+.container > .cart > .related_product > .product_rel .light-font{
 	color: #a0b3ca;
 	margin-right: 8px;
 }
 
-.main .product-bottom a {
+.main > .product_list > .product_item > .product-bottom a {
 	font-size: 15px;
 	color: #f07321;
 }
-.main .product-bottom a:hover {
+.main > .product_list > .product_item > .product-bottom a:hover {
 	color: rgb(51, 51, 223);
 }
 
-.main .product-bottom .button,
+.main > .product_list > .product_item > .product-bottom .button,
 .main .button,
-.main .button_apply {
+.main .total .button_apply {
 	background-color: #998235;
 	color: white;
 	font-size: 16px;
@@ -729,16 +733,15 @@ nav > ul > li > a:hover ul > li:hover a {
 	margin-right: 3px;
 	border: 0;
 }
-.product-bottom .button:hover,
-.button:hover {
+.main > .product_list > .product_item > .product-bottom .button:hover,
+ .main .button:hover{
 	background-color: #f3ac3c;
 	color: white;
 }
-/*end product section*/
+/*-------------------------------------------end product section---------------------------------*/
 
-/*********************/
-/*Cart Page*/
-.cart {
+/*-------------------------------------------Cart Page--------------------------------------------*/
+.container > .cart {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -746,14 +749,14 @@ nav > ul > li > a:hover ul > li:hover a {
 	margin: 3% 10%;
 }
 
-.select_item {
+.container > .cart .select_item {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin: 3% 0;
 	background-color: azure;
 }
-.items {
+.container > .cart .items {
 	display: grid;
 	justify-content: center;
 	align-content: center;
@@ -761,50 +764,129 @@ nav > ul > li > a:hover ul > li:hover a {
 	grid-gap: 0 50px;
 	border-bottom: 1px solid #a0b3ca;
 	margin-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 8px;
 }
 
-.items img {
+.container > .cart .items img ,
+.container > .cart > .related_product img{
 	height: 70px;
 	width: 70px;
 }
 
-.love_delete,
-.fa-trash-alt {
+.container > .cart .items .love_delete,
+.container > .cart .items .fa-trash-alt,
+.container > .cart .select_item .fa-trash-alt{
 	margin-top: 5px;
 	color: #a0b3ca;
 }
 
-.total {
+.container > .cart > .main{
+	margin: auto 0;
+	width: 25%;
+}
+
+.container > .cart .total {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin: 10px 0;
 }
-.total .prize {
+.container > .cart .total .prize,
+.container > .cart .items  .prize {
 	padding: 0;
 }
-.fa-heart {
+.container > .cart .items .fa-heart {
 	margin-right: 20px;
 }
-.amount {
+.container > .cart .items .amount {
 	margin: 0 10px;
 }
-.items .light-font {
+.container > .cart .items .light-font,
+.container > .cart > .related_product > .product_rel .light-font{ 
 	font-size: 14px;
+	padding: 5px 0;
 }
-.button {
+
+.container > .cart .items .plus_minus{
+	padding: 0 10px;
+}
+.main .button {
 	padding: 4px 43px;
+	margin: 5% 0;
+	width: 100%;
 }
-.button_apply {
+.main .total .button_apply {
 	background-color: skyblue;
 	padding: 9px 6px;
+	margin: 27% 0;
 }
-.button_apply:hover {
+.main .total .button_apply:hover {
 	background-color: blue;
 }
-.text_input {
+.main .total .text_input {
 	padding: 8px 5px;
+	margin: 5% 0;
+	width: 75%;
+}
+
+.container > .cart > .card{
+	width: 60%;
+	background-color: #ECECEC;
+	padding: 3% 3% 3%;
+	margin: 5% 0;
+}
+.container > .cart> .card h4{
+	text-align: center;
+	font-size: 17px;
+	font-weight: 50;
+	margin: 0 0 3%;
+}
+.container > .cart> .card .form-divide{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width:100%;
+}
+.container > .cart> .card .light-font{
+	font-size: 13px;
+}
+.container > .cart > .card .text_input,
+.container > .cart > .card input[type=number],
+.container > .cart > .card select{
+	width: 90%;
+	padding: 7px 2px;
+	font-size: 15px;
+	margin: 0 5%;
+}
+
+.container > .cart > .card .form-divide .text_input,
+.container > .cart > .card .form-divide input[type=number],
+.container > .cart > .card .form-divide select{
+	width: 100%;
+}
+.container > .cart> .card label{
+	margin: 0 5%;
+}
+
+.container > .cart > .related_product{	
+	width: 35%;
+	margin: 5% 0 5% 5%;
+}
+
+.container > .cart > .related_product > h4{
+	font-size: 20px;
+	font-weight: 100;
+	color: #998235;
+}
+
+.container > .cart > .related_product > .product_rel{
+	height: 140px;
+	border-bottom: 1px solid #c2b6b6;
+	margin: 5% 0 0 5%;
+}
+
+.container > .cart > .related_product > .product_rel h5{
+	margin-top: 5px;
 }
 
 /*--------------------------------------------footer  start  ____________________________________*/

@@ -37,7 +37,28 @@
                             <div class="love_delete"><i class="far fa-heart"></i><i class="fas fa-trash-alt"></i></div>
                         </div>
                         <div>
-                            <button>-</button><span class="amount">2</span><button>+</button>
+                            <button class="plus_minus">-</button><span class="amount">2</span><button class="plus_minus">+</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <form>
+                                <input type="checkbox">
+                            </form>
+                            <img src="assets/images/logo/logo.jpg"/>
+                        </div>
+                        <div>
+                            <h4>Winter Cotton Cap for Men & Women</h4>
+                            <p class="light-font">No Brand, Color Family:Black, Size:Int: One size</p>
+                        </div>
+                        <div>
+                            <div class="prize">$300</div>
+                            <div class="discount"><del class="light-font">$400</del></div>
+                            <div><ins class="small">40% Discount</ins></div>
+                            <div class="love_delete"><i class="far fa-heart"></i><i class="fas fa-trash-alt"></i></div>
+                        </div>
+                        <div>
+                            <button class="plus_minus">-</button><span class="amount">2</span><button class="plus_minus">+</button>
                         </div>
                     </div>
                     <div class="items">
@@ -58,7 +79,7 @@
                             <div class="love_delete"><i class="far fa-heart"></i><i class="fas fa-trash-alt"></i></div>
                         </div>
                         <div>
-                            <button>-</button><span class="amount">2</span><button>+</button>
+                            <button class="plus_minus">-</button><span class="amount">2</span><button class="plus_minus">+</button>
                         </div>
                     </div>
                     <div class="items">
@@ -79,51 +100,344 @@
                             <div class="love_delete"><i class="far fa-heart"></i><i class="fas fa-trash-alt"></i></div>
                         </div>
                         <div>
-                            <button>-</button><span class="amount">2</span><button>+</button>
+                            <button class="plus_minus">-</button><span class="amount">2</span><button class="plus_minus">+</button>
                         </div>
-                    </div>
-                    <div class="items">
-                        <div>
-                            <form>
-                                <input type="checkbox">
-                            </form>
-                            <img src="assets/images/logo/logo.jpg"/>
-                        </div>
-                        <div>
-                            <h4>Winter Cotton Cap for Men & Women</h4>
-                            <p class="light-font">No Brand, Color Family:Black, Size:Int: One size</p>
-                        </div>
-                        <div>
-                            <div class="prize">$300</div>
-                            <div class="discount"><del class="light-font">$400</del></div>
-                            <div><ins>40% Discount</ins></div>
-                            <div class="love_delete"><i class="far fa-heart"></i><i class="fas fa-trash-alt"></i></div>
-                        </div>
-                        <div>
-                            <button>-</button><span class="amount">2</span><button>+</button>
-                        </div>
-                    </div>
-                
+                    </div>  
                 </div>
-                <div>
-                <h3>Order summary</h3>
-                <div class="total">
-                    <div>Subtotal Items</div>
-                    <div>0</div>
+                <div class="main">
+                    <h3>Order summary</h3>
+                    <div class="total">
+                        <div>Subtotal Items</div>
+                        <div>0</div>
+                    </div>
+                    <form>
+                        <div class="total">
+                            <input type="text" class="text_input" placeholder="Enter Voucher Code">
+                            <span><button class="button_apply">Apply</button></span>
+                        </div>
+                        <div class="total">
+                            <div>Total</div>
+                            <div class="prize">0$</div>
+                        </div>
+                        <button class="button">Proceed to checkout</button>
+                    </form>
                 </div>
-                <form>
-                    <div class="total">
-                        <input type="text" class="text_input" placeholder="Enter Voucher Code">
-                        <span><button class="button_apply">Apply</button></span>
+            </div>
+            <div class="cart">
+                <div class="card">
+                    <form>
+                        <h4>Delivery Information</h4>
+                        <div class="form-divide">
+                            <div>
+                                <label class="light-font">Division</label><br/>
+                                <select class="">
+                                    <option>Select one</option>
+                                    <option>Dhaka</option>
+                                    <option>Chattagram</option>
+                                    <option>Rajshahi</option>
+                                    <option>Khulna</option>
+                                    <option>Barishal</option>
+                                    <option>Sylhet</option>
+                                    <option>Rangpur</option>
+                                    <option>Mymensingh</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="light-font">Zilla</label><br/>
+                                <select class="">
+                                    <option>Select one</option>
+                                    <option>Dhaka</option>
+                                    <option>Chattagram</option>
+                                    <option>Rajshahi</option>
+                                    <option>Khulna</option>
+                                    <option>Barishal</option>
+                                    <option>Sylhet</option>
+                                    <option>Rangpur</option>
+                                    <option>Mymensingh</option>
+                                </select><br/><br/>
+                            </div>
+                            <div>
+                                <label class="light-font">Union</label><br/>
+                                <select class="">
+                                    <option>Select one</option>
+                                    <option>Dhaka</option>
+                                    <option>Chattagram</option>
+                                    <option>Rajshahi</option>
+                                    <option>Khulna</option>
+                                    <option>Barishal</option>
+                                    <option>Sylhet</option>
+                                    <option>Rangpur</option>
+                                    <option>Mymensingh</option>
+                                </select><br/><br/>
+                            </div>
+                            <div>
+                                <label class="light-font">Area</label><br/>
+                                <input type="text" class="text_input " placeholder="House no: 23, Road no: 2"><br/><br/>
+                            </div>                     
+                        </div>
+                        <label class="light-font">From</label><br/>
+                        <input type="text" class="text_input"><br/><br/>
+                        <label class="light-font">To</label><br/>
+                        <input type="text" class="text_input"><br/><br/>
+                        <label class="light-font">Message</label><br/>
+                        <textarea class="text_input" rows='10'></textarea><br/><br/>
+                        <div class="form-divide">
+                            <div>
+                                <label class="light-font">Package name</label><br/>
+                                <select class="">
+                                    <option>Select one</option>
+                                    <option>Birthday</option>
+                                    <option>Anniversary</option>
+                                    <option>Special</option>
+                                    <option>Father's Day</option>
+                                    <option>Mother's Day</option>
+                                    <option>Custom</option>
+                                </select><br/><br/>
+                            </div>
+                            <div>
+                                <label class="light-font">Quantity</label><br/>
+                                <input type="number" class=""><br><br>
+                            </div>
+                            <div>
+                                <label class="light-font">Delivery Date</label><br/>
+                                <input type="text" class="text_input "><br/><br/>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="related_product">
+                    <h4>Related product</h4>
+                    <div class="product_rel">
+                        
+                        <img src="assets/images/logo/logo.jpg">
+                        <h5>Winter Cotton Cap for Men & Women</h5>
+                        <p class="light-font">No Brand, Color Family:Black, Size:Int: One size</p>
                     </div>
-                    <div class="total">
-                        <div>Total</div>
-                        <div class="prize">0$</div>
+                    <div class="product_rel">
+                        
+                        <img src="assets/images/logo/logo.jpg">
+                        <h5>Winter Cotton Cap for Men & Women</h5>
+                        <p class="light-font">No Brand, Color Family:Black, Size:Int: One size</p>
                     </div>
-                    <button class="button">Proceed to checkout</button>
-                </form>
+                    <div class="product_rel">
+                        
+                        <img src="assets/images/logo/logo.jpg">
+                        <h5>Winter Cotton Cap for Men & Women</h5>
+                        <p class="light-font">No Brand, Color Family:Black, Size:Int: One size</p>
+                    </div>
+                    <div class="product_rel">
+                        <img src="assets/images/logo/logo.jpg">
+                        <h5>Winter Cotton Cap for Men & Women</h5>
+                        <p class="light-font">No Brand, Color Family:Black, Size:Int: One size</p> 
+                     </div>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+ 
+        <div class="container">
+		<div class="content">
+					<footer>
+						<div class="footertop">
+
+							<div class="top">
+								<div class="leftmenu">
+									<div class="Subscribe">
+										<div class="submit">
+								    	<input type="text" placeholder="Enter Your Email">
+										<button type="submit">Submit</button>
+										</div>
+
+									</div>
+									<div class="top-bottom">
+										<div class="know-us">
+											<h3>Get to Know Us</h3>
+									     	<a><h5>Careers</h5></a>	
+											 
+									     	<a><h5>About Surprize gift</h5></a>	
+											 
+									     	<a><h5>Investor Relationship</h5></a>	
+											 
+									     	<a><h5>Gift Devices</h5></a>
+										</div>
+										<div class="makemoney try">
+											
+											<h3>Makes Money with US</h3>
+											
+											<a><h5>Sell Productss</h5></a>
+											
+											<a><h5>Become to Affiliate</h5></a>
+
+											
+											<a><h5>Advertose your products</h5></a>
+											<a>	<h5>Self Publish with US</h5></a>
+										
+										</div>
+	
+										<div class="makemoney tryLast">
+											<h3>Payment</h3>
+											<a><h5>VISA</h5></a>
+											
+											<a><h5>Bkash</h5></a>
+
+											
+											<a><h5>Nogod</h5></a>
+										</div>
+									</div>
+								
+								</div>
+								<div class="rightlocation">
+									<h3>Our location</h3>
+									<img src="Assets/images/footer/index.jpg" alt="" srcset="">
+								</div>
+							</div>
+
+
+							
+
+						</div>
+						<hr  />
+
+					<div class="social-footer">
+
+						<div class="social-footer-icons">
+							<h3>Follow Us</h3>
+							<ul >
+
+								<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
+								<li><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="copyright">
+						<p>&#9400;SurprizingGift</p>
+					</div>
+
+
+
+					<div class="footer-down">
+
+
+						<p class="footer-language">
+							<i class="global-site"></i> Alibaba.com Site: <a href="//www.alibaba.com">International</a> - <a href="//spanish.alibaba.com">Español</a> - <a href="//portuguese.alibaba.com">Português</a> - <a href="//german.alibaba.com">Deutsch</a> - <a href="//french.alibaba.com">Français</a> - <a href="//italian.alibaba.com">Italiano</a> - <a href="//hindi.alibaba.com">हिंदी</a> - <a href="//russian.alibaba.com">Pусский</a> - <a href="//korean.alibaba.com">한국어</a> - <a href="//japanese.alibaba.com">日本語</a> - <a href="//arabic.alibaba.com">اللغة العربية</a> - <a href="//thai.alibaba.com">ภาษาไทย</a> - <a href="//turkish.alibaba.com">Türk</a> - <a href="//dutch.alibaba.com/">Nederlands</a> - <a href="//vietnamese.alibaba.com/">tiếng Việt</a> - <a href="//indonesian.alibaba.com/">Indonesian</a> - <a href="//hebrew.alibaba.com/">עברית</a>
+						</p>
+						
+
+						<p class="footer-brand">		
+							<a  target="_blank" href="http://www.alibabagroup.com/en/global/home">Alibaba  Group</a>
+							|
+							<a  target="_blank" href="http://www.taobao.com">Taobao Marketplace</a>
+							|
+							<a  target="_blank" href="http://www.tmall.com/">Tmall.com</a>
+
+
+
+							|
+							<a  target="_blank" href="http://ju.taobao.com/">Juhuasuan</a>
+
+
+
+							|
+							<a  target="_blank" href="http://www.aliexpress.com/">AliExpress</a>
+
+
+
+							|
+							<a  target="_blank" href="http://www.alibaba.com/">Alibaba.com</a>
+
+
+
+							|
+							<a  target="_blank" href="http://www.1688.com">1688.com</a>
+
+
+
+							|
+							<a  target="_blank" href="http://www.alimama.com/index.htm">Alimama</a>
+
+
+
+							|
+							<a  target="_blank" href="https://www.fliggy.com/">Fliggy</a>
+
+
+
+							|
+							<a  target="_blank" href="https://g-sellercenter.taobao.com/mail">Tmall Taobao World</a>
+
+							<br/>
+
+							<a  target="_blank" href="https://www.alibabacloud.com/">Alibaba Cloud</a>
+							|
+							<a  target="_blank" href="http://www.alios.cn/">AliOS</a>
+							|
+							<a  target="_blank" href="http://www.aliqin.cn/">AliTelecom</a>
+							|
+							<a  target="_blank" href="http://www.autonavi.com/">Autonavi</a>
+							|
+							<a  target="_blank" href="http://www.ucweb.com/">UCWeb</a>
+							|
+							<a  target="_blank" href="http://www.umeng.com/">Umeng</a>
+							|
+							<a  target="_blank" href="http://www.xiami.com/">Xiami</a>
+							|
+							<a  target="_blank" href="http://www.dingtalk.com/en">DingTalk</a>
+							|
+							<a  target="_blank" href="https://global.alipay.com/">Alipay</a>
+							|
+							<a  target="_blank" href="http://taobao.lazada.sg/">Lazada</a>
+							|
+							<a  target="_blank" href="https://s.alibaba.com/?scene=clinks">Alibaba Security</a>
+						</p>
+
+						<p class="footer-brand">
+							Browse Alphabetically:
+							<a target="_blank" href="//onetouch.alibaba.com/">Onetouch</a>
+							| <a target="_blank" data-multi="true" data-href="/showroom/showroom.html" href="//www.alibaba.com/showroom/showroom.html">Showroom</a>
+							| <a target="_blank" href="//www.alibaba.com/countrysearch/continent.html">Country Search</a>
+							| <a target="_blank" data-multi="true" data-href="/suppliers/supplier.html" href="//www.alibaba.com/suppliers/supplier.html">Suppliers</a>
+							| <a target="_blank" href="//ads.alibaba.com/">Affiliate</a>
+						</p>
+
+
+						<p class="footer-policy">
+							<a href="//rule.alibaba.com/rule/detail/2047.htm" rel="nofollow">
+								Product Listing Policy
+							</a>
+							- <a href="//ipp.alibabagroup.com/" rel="nofollow">
+								Intellectual Property Protection
+							</a>
+							- <a href="//rule.alibaba.com/rule/detail/2034.htm" rel="nofollow">
+								Privacy Policy
+							</a>
+							- <a href="http://rule.alibaba.com/rule/detail/2041.htm" rel="nofollow">
+								Terms of Use
+							</a>
+							- <a href="//www.alibabagroup.com/en/contact/law_e_commerce?tracelog=footer_rule_5038" rel="nofollow">User Information Legal Enquiry Guide</a>
+						</p>
+
+						<p class="footer-copyright">
+							<a target="_blank" href="http://idinfo.zjamr.zj.gov.cn//bscx.do?method=lzxx&id=3301083301080000022169">
+								<img style="height: 28px;width: 26px;vertical-align: middle;margin-right: 6px;" src="https://img.alicdn.com/tfs/TB1VtZtebH1gK0jSZFwXXc7aXXa-65-70.gif"/></a><a rel="nofollow" href="//www.alibaba.com/trade/servlet/page/static/copyright_policy">&copy;</a> 1999-2022 Alibaba.com. All rights reserved.
+
+								<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000092" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+									<img src="https://img.alicdn.com/tfs/TB1QhYprKT2gK0jSZFvXXXnFXXa-20-20.png" style="float:left;width:20px;height:100%;" />
+									<span style="display:inline-block;text-decoration:none;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">浙公网安备 33010002000092号</span>
+								</a>
+								<a target="_blank" href="http://beian.miit.gov.cn" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;margin: 0px 0px 0px 5px;color:#939393;">浙B2-20120091-4</a>
+							</p>
+						</div>
+
+
+
+
+						</footer>
+					</div>
+				</div>
+
+		<script type="text/javascript" src="assets/javascript/main.js"></script>
+	</body>
+	</html>

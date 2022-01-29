@@ -42,7 +42,7 @@
                     </div>
                     <div class="login">
                         <ul>
-                            <li><a href="#">SignIn</a></li>
+                            <li><a href="signin.html">SignIn</a></li>
                             <li><a href="cart.html"><i class="fas fa-cart-plus"></i> </a></li>
                             <li>
                                 <div>
@@ -77,9 +77,9 @@
 
 
                                 </li>
-                                <li><a href="#"> Custom Gift</a></li>
-                                <li><a href="#"> Create Custom Gift</a></li>
-                                <li><a href="#">Order booked</a></li>
+                                <li><a href="customgift.html"> Custom Gift</a></li>
+                                <li><a href="createcustomgift.html"> Create Custom Gift</a></li>
+                                <li><a href="orderbooking.html">Order booked</a></li>
                                 <li><a href="#">Services</a></li>
                                 <li><a href="#">About Us</a>
 
@@ -347,11 +347,20 @@
 
     <script type="text/javascript" src="Assets/javascript/main.js"></script>
     <script type="text/javascript" >
-// const signUpButton = document.getElementById('signUp');
-// console.log(document.querySelector('.logcontain'));
-// const signInButton = document.getElementById('signIn');
-// const logcontain = document.getElementById('logcontainer');
-// console.log(signUpButton);
+const signUpButton = document.getElementById('btnsignup');
+const signInButton = document.getElementById('btnsignin');
+const socailheader = document.getElementById('socailheader');
+
+
+
+ signUpButton.addEventListener('click', () => {
+	socailheader.innerText="Create  Your account";
+}); 
+
+
+  signInButton.addEventListener('click', () => {
+    socailheader.innerText="Login ";
+});
     </script>
 </body>
 </html>

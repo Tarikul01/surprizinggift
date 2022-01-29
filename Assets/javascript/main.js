@@ -191,20 +191,7 @@ function customFunction(event) {
 
 
 // __________________________Start sign up and Signed in _______________________________
-const signUpButton = document.getElementById('btnsignup');
-const signInButton = document.getElementById('btnsignin');
-const socailheader = document.getElementById('socailheader');
 
-
-
- signUpButton.addEventListener('click', () => {
-	socailheader.innerText="Create  Your account";
-}); 
-
-
-  signInButton.addEventListener('click', () => {
-    socailheader.innerText="Login ";
-});
 
 
 
